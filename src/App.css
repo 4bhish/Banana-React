@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+:root {
+  --color-primary:#0a0a23;
+  --color-secondary:  #1b1b32;
+  --color-btn: #3b3b4f;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 800px;
+  max-height: 100vh;
+  height: max-content;
+  max-width: max-content;
+  padding: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.container > textarea{
+  width: 350px;
+  height: 80px;
+  padding: 10px;
+  margin: 10px;
+  outline: none;
+  border:  0.1px solid whitesmoke;
+  background-color: var(--color-secondary);
+  object-fit: contain;
+  color: white;
+  text-indent: 5px;
+  font-size: large;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container > .outputText{
+  width: 350px;
+  height: 80px;
+  margin: 10px;
+  border: 0.1px solid whitesmoke;
+  background-color: var(--color-secondary);
+  padding: 10px;
+  color: white;
+  text-indent: 5px;
+  font-size: large;
+}
+.container > h1{
+  margin: 10px 0;
+}
+.container > .desc{
+  margin: 10px 0;
+}
+.container > button{
+  height: 40px;
+  width: 100px;
+  align-self: center;
+  background-color: var(--color-btn);
+  color: white;
+  border: 1px solid whitesmoke;
+  margin:10px 0;
 }
